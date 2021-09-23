@@ -19,4 +19,9 @@ export class DataService {
     return this.http.post("http://localhost:2222/login",{"data":item})
     
 } 
+
+loggedin(){
+   
+  return !!localStorage.getItem('token')
+}
 }
